@@ -1,0 +1,24 @@
+
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install material for mkdocs
+        run: pip install mkdocs-material
+
+      - name: depoly new version on live preview
+        run: pip install mkdocs-material
