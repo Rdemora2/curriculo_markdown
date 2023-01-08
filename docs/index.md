@@ -1,4 +1,4 @@
-# Currículo - Roberto de Moraes Zarzur
+# Roberto de Moraes Zarzur
 > Estagiário de Desenvolvimento web full stack
 
 ---
